@@ -11,6 +11,8 @@ namespace Pirate
 		private int pirete;
 		private int rum;
 		private int lives;
+		private int died;
+		private int live;
 		private static Random RND = new Random();
 
 		public Pirate(int pirete, int rum, int lives)
@@ -55,10 +57,12 @@ namespace Pirate
 			if (lives==1)
 			{
 				return "He is dead";
+				died++;
 			}
 			else
 			{
 				return "He is alive";
+				live++;
 			}
 		}
 
