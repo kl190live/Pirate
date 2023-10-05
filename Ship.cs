@@ -44,7 +44,6 @@ namespace Pirate
 				}
 			}
 			return $"On the ship There is a {captian} captian and he has {crew} crew member";
-			
 		}
 
 
