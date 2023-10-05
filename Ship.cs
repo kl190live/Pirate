@@ -24,17 +24,26 @@ namespace Pirate
 		public string Crew { get => crew; set => crew = value; }
 		internal List<Pirate> Pirate { get => pirate; set => pirate = value; }
 
+
+
+
 		public string fillship()
 		{
+			int crew = 0;
+			int captian = 0;
 			int board=random.Next(114);
 			for (int i = 0; i < board; i++)
 			{
-
-
-
-
+				if (captian == 0)
+				{
+					captian++;
+				}
+				else if (captian == 1) 
+				{
+					crew++;
+				}
 			}
-			
+			return $"On the ship There is a {captian} captian and he has {crew} crew member";
 			
 		}
 
